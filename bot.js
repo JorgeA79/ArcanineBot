@@ -33,7 +33,7 @@ client.on('message', message => {
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+  .setURL("https://www.youtube.com/channel/UC-lJne5adEP6NNnV8zF4ycg")
   .addField("This is a field title, it can hold 256 characters",
     "This is a field value, it can hold 2048 characters.")
   /*
