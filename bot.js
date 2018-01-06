@@ -19,8 +19,8 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'channel')) {
 	const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
+  .setTitle("Roaring Arcanine")
+  .setAuthor("Selobgo", "https://cdn.discordapp.com/avatars/178135668755660800/983c6252aabb009d8b7507e8f1e14185.jpg")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
