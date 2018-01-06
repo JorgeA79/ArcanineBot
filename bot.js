@@ -25,7 +25,7 @@ client.on('message', message => {
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0xFFA500)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
+  .setDescription("Hello everyone! Roaring Arcanine here. \nI am mainly a let's play Pokemon channel. \nI'm pretty chill and always up for challenges.")
   .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
   /*
@@ -33,11 +33,7 @@ client.on('message', message => {
    */
   .setTimestamp()
   .setURL("https://www.youtube.com/channel/UC-lJne5adEP6NNnV8zF4ycg")
-  .addField("This is a field title, it can hold 256 characters",
-    "This is a field value, it can hold 2048 characters.")
-  /*
-   * Inline fields may not display as inline if the thumbnail and/or image is too big.
-   */
+  
   .addField("Inline Field", "They can also be inline.", true)
   /*
    * Blank field, useful to create some space.
