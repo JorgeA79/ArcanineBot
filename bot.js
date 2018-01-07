@@ -33,11 +33,6 @@ client.on('message', message => {
   .setTimestamp()
   .setURL("https://www.youtube.com/channel/UC-lJne5adEP6NNnV8zF4ycg")
   
-  
-  /*
-   * Blank field, useful to create some space.
-   */
-  
 
   message.channel.send({embed});
 	}
