@@ -57,7 +57,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'randomvideo')) {
 	var selectVideo = randomVideo[Math.floor(Math.random() * answers.length)];
-		message.channel.send(randomAnswer);
+		message.channel.send(randomVideo);
 		 
 	}
 });
