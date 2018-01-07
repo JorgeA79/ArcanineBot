@@ -25,7 +25,7 @@ client.on('message', message => {
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0xFFA500)
-  .setDescription("Hello everyone! Roaring Arcanine here. \nI am mainly a let's play Pokemon channel. \nI'm pretty chill and always up for challenges.")
+  .setDescription("Hello everyone! Roaring Arcanine here. I am mainly a let's play Pokemon channel. I'm pretty chill and always up for challenges.")
   .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
   /*
