@@ -26,7 +26,6 @@ client.on('message', message => {
    */
   .setColor(0xFFA500)
   .setDescription("Hello everyone! Roaring Arcanine here. I am mainly a let's play Pokemon channel. I'm pretty chill and always up for challenges.")
-  .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
   /*
    * Takes a Date object, defaults to current date.
