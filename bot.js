@@ -57,7 +57,24 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'randomvideo')) {
 	var selectVideo = randomVideo[Math.floor(Math.random() * randomVideo.length)];
-		message.channel.send(selectVideo);
+		const embed = new Discord.RichEmbed()
+  .setTitle("> Click for a random video <")
+  .setAuthor("Selobgo", "https://cdn.discordapp.com/avatars/178135668755660800/983c6252aabb009d8b7507e8f1e14185.jpg")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0xFFA500)
+  
+  .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL(selectVideo)
+  
+
+  message.channel.send({embed});
+		
 		 
 	}
 });
