@@ -28,7 +28,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
 	
-		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n -a!channel\n -a!randomvideo\n -a!ping`);
+		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n **-a!channel**\n **-a!randomvideo**\n **-a!ping**`);
 	}
 });
 client.on('message', message => {
