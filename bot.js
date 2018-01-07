@@ -26,6 +26,13 @@ var randomVideo = [
 ]
 client.on('message', message => {
 	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'help')) {
+	
+		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n -a!channel\n -a!randomvideo\n -a!ping`);
+	}
+});
+client.on('message', message => {
+	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
 	
 		 message.channel.send(`Pong! :ping_pong:  \`${Date.now() - message.createdTimestamp} ms\``);
