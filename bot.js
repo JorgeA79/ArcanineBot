@@ -34,12 +34,11 @@ client.on('message', message => {
   .setTimestamp()
   .setURL("https://www.youtube.com/channel/UC-lJne5adEP6NNnV8zF4ycg")
   
-  .addField("Inline Field", "They can also be inline.", true)
+  
   /*
    * Blank field, useful to create some space.
    */
-  .addBlankField(true)
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
+  
 
   message.channel.send({embed});
 	}
