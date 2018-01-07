@@ -56,8 +56,9 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'randomvideo')) {
-	
-		 message.channel.send(`Pong! :ping_pong:  \`${Date.now() - message.createdTimestamp} ms\``);
+	var selectVideo = randomVideo[Math.floor(Math.random() * answers.length)];
+		message.channel.send(randomAnswer);
+		 
 	}
 });
 //Important
