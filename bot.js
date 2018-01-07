@@ -7,10 +7,26 @@ client.on('ready',() => {
 });
 
 var prefix = "a!"
-
+var randomVideo = [
+"https://www.youtube.com/watch?v=hjwQZJKWLLs",
+"https://www.youtube.com/watch?v=mf7w6NXaZNw",
+"https://www.youtube.com/watch?v=ntRziY0j-ys",
+"https://www.youtube.com/watch?v=vBN-TuXn5Iw",
+"https://www.youtube.com/watch?v=vF6SevrW_dU",
+"https://www.youtube.com/watch?v=FOVP51OCdd0",
+"https://www.youtube.com/watch?v=GxCE_DFTAHc&list=PLu5RkmTClSDmpkUQ5-RdEYZxjP3KQT8VZ",
+"https://www.youtube.com/watch?v=GVNk2uThkT8&list=PLu5RkmTClSDlpeQijJHObJFuB161PzJKU",
+"https://www.youtube.com/watch?v=xPALB43arI8&list=PLu5RkmTClSDkxto7hsAGasmAki1PRH3KR",
+"https://www.youtube.com/watch?v=bIdskw9pKM8",
+"https://www.youtube.com/watch?v=zhnZbsmF06s",
+"https://www.youtube.com/watch?v=j1MHz_X9Uxs",
+"https://www.youtube.com/watch?v=B2YqV_K1E40",
+"https://www.youtube.com/watch?v=3Oqdkrx97Fs",
+"https://www.youtube.com/watch?v=rLEkkm1WQ3M"
+]
 client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'ping')) {
+	if (message.content.startsWith(prefix + 'channel')) {
 	
 		 message.channel.send(`Pong! :ping_pong:  \`${Date.now() - message.createdTimestamp} ms\``);
 	}
