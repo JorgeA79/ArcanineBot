@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const mentionHook = new Discord.WebhookClient('399340623314026498', 'HXUz15HT6kaRypPaXIaknfnSn20p5t6K_fT5pk315BhUnFJ_GILmKc9cjmlqe2eVCKPN');
 
 client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
@@ -88,6 +87,31 @@ client.on('message', message => {
 });
 client.on('message', message => {
 	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'lastvideo')) {
+	
+		const embed = new Discord.RichEmbed()
+  .setTitle("> Click for last video <")
+  .setAuthor("Selobgo", "https://cdn.discordapp.com/avatars/178135668755660800/983c6252aabb009d8b7507e8f1e14185.jpg")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0xFFA500)
+  
+  .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL(messagexd)
+  
+
+  message.channel.send({embed});
+		
+		 
+	}
+});
+client.on('message', message => {
+	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'server')) {
 	var selectVideo = randomVideo[Math.floor(Math.random() * randomVideo.length)];
 		const embed = new Discord.RichEmbed()
@@ -156,9 +180,7 @@ message.channel.createWebhook(name, avatar)
 client.on('message', message => {
 	if (message.author.bot) 
 	if (message.content.startsWith(' https://www.youtube.com')) {
-bot.deleteMessage({
-    channelID: "399773931092836365"
-});
+ message.delete(1000);
 		 var messagexd = (message.content)
 		
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
