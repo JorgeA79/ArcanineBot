@@ -29,7 +29,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
 	
-		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n **-a!channel**\n **-a!randomvideo**\n **-a!server**\n **-a!invite**\n **-a!ping**`);
+		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n **-a!channel**\n **-a!randomvideo**\n **-a!server**\n **-a!ping**`);
 	}
 });
 client.on('message', message => {
@@ -136,8 +136,12 @@ client.on('message', message => {
 		 
 	}
 });
-
-
+client.on('message', message => {
+	if (message.author === client.user) {
+	var messagexd = (message.content)
+		 message.channel.send(messagexd);
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 
