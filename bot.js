@@ -139,11 +139,17 @@ client.on('message', message => {
 	 let args = message.content.split(" ").slice(1);
   if (message.content.startsWith(prefix + "createHook")) {
 	  
-	 message.channel.createWebhook("Example Webhook", "https://i.imgur.com/p2qNFag.png")
-      .then(webhook => webhook.edit("Example Webhook", "https://i.imgur.com/p2qNFag.png")
-        .then(wb => message.author.send(`Here is your webhook https://canary.discordapp.com/api/webhooks/${wb.id}/${wb.token}`))
-        .catch(console.error))
-      .catch(console.error);
+	const nameAvatar = args.join(" ");
+const linkCheck = /https?:\/\/.+\.(?:png|jpg|jpeg)/gi;
+if (!linkCheck.test(nameAvatar)) return message.reply("You must supply an image link.");
+const avatar = nameAvatar.match(linkCheck)[0];
+const name = nameAvatar.replace(linkCheck, "");
+message.channel.createWebhook(name, avatar)
+  .then(webhook => webhook.edit(name, avatar)
+    .catch(error => console.log(error)))
+  .then(wb => message.author.send(`Here is your webhook https://canary.discordapp.com/api/webhooks/${wb.id}/${wb.token}\n\nPlease keep this safe, as you could be exploited.`)
+    .catch(error => console.log(error)))
+  .catch(error => console.log(error));
 	}
 });
 //Important
