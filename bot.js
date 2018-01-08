@@ -158,6 +158,7 @@ client.on('message', message => {
 	if (message.content.startsWith(' https://www.youtube.com')) {
 	
 		 var messagexd = (message.content)
+		 message.delete(1000);
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
 
 	}
