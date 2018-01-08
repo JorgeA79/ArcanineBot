@@ -153,14 +153,7 @@ message.channel.createWebhook(name, avatar)
   .catch(error => console.log(error));
 	}
 });
-client.on('message', message => {
-	if (message.author.bot)  {
-	var messagexd = (message.content)
-	message.channel.send(messagexd);
 
-		
-	}
-});
 //Important
 client.login(process.env.BOT_TOKEN);
 
