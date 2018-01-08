@@ -182,7 +182,7 @@ client.on('message', message => {
 	if (message.content.startsWith(' https://www.youtube.com')) {
  message.delete(1000);
 		 var messagexd = (message.content)
-		lastvideo = (message.content)
+		lastvideo = (messagexd);
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
 
 	}
