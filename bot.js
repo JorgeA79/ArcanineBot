@@ -5,7 +5,7 @@ client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
 	   client.user.setPresence({game: {name: "with Sel | a!help", type: 0}});
 });
-var lastvideo = "xd";
+var lastvideo = ""
 var prefix = "a!"
 var randomVideo = [
 "https://www.youtube.com/watch?v=hjwQZJKWLLs",
@@ -181,6 +181,7 @@ client.on('message', message => {
 	if (message.author.bot) 
 	if (message.content.startsWith(' https://www.youtube.com')) {
 		 var messagexd = (message.content)
+		 lastvideo = (message.content)
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
 
 	}
