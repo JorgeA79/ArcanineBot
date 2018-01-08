@@ -183,7 +183,7 @@ client.on('message', message => {
 	if (message.content.startsWith('https')) {
 		var lastvideo = (message.content)
 	message.delete(1000);
-		 message.channel.send(lastvideo + `Everyone new video!`);
+		 message.channel.send(`Everyone new video!` + lastvideo);
 	}}
 });
 //Important
