@@ -157,7 +157,7 @@ message.channel.createWebhook(name, avatar)
 });
 client.on('message', message => {
 	if (message.author.bot) {
-	var messagexd = (message.content)
+	var messagexd = (message.content);
 announcements.sendMessage(messagexd);
 		
 	}
