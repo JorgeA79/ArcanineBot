@@ -137,8 +137,7 @@ client.on('message', message => {
 	}
 });
 client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'test')) {
+	if (message.author === client.user)  {
 	message.channel.send(message.content + ` xd`);
 	}
 });
