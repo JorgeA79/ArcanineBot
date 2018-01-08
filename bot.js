@@ -179,11 +179,11 @@ message.channel.createWebhook(name, avatar)
 });
 
 client.on('message', message => {
-	if (message.author.bot)
+	if (message.author.bot){
 	if (message.content.startsWith('https')) {
 	
 		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n **-a!channel**\n **-a!randomvideo**\n **-a!server**\n **-a!ping**`);
-	}
+	}}
 });
 //Important
 client.login(process.env.BOT_TOKEN);
