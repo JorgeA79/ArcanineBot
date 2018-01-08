@@ -181,7 +181,6 @@ client.on('message', message => {
 	if (message.author.bot) 
 	if (message.content.startsWith(' https://www.youtube.com')) {
 		 var messagexd = (message.content)
-		lastvideo = (messagexd);
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
 
 	}
