@@ -156,10 +156,8 @@ message.channel.createWebhook(name, avatar)
 	}
 });
 client.on('message', message => {
-	if (message.author.bot)  return;
-	if (message.content.startsWith('https')) {
+	if (message.author.bot) {
 	var messagexd = (message.content)
-	message.channel.send(messagexd);
 announcements.sendMessage(messagexd);
 		
 	}
