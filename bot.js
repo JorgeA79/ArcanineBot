@@ -5,7 +5,7 @@ client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
 	   client.user.setPresence({game: {name: "with Sel | a!help", type: 0}});
 });
-var lastvideo = ""
+
 var prefix = "a!"
 var randomVideo = [
 "https://www.youtube.com/watch?v=hjwQZJKWLLs",
@@ -102,7 +102,7 @@ client.on('message', message => {
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL(lastvideo)
+  .setURL("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
   
 
   message.channel.send({embed});
@@ -180,9 +180,9 @@ message.channel.createWebhook(name, avatar)
 client.on('message', message => {
 	if (message.author.bot) 
 	if (message.content.startsWith(' https')) {
-		 var messagexd = (message.content)
+		 
 
-		 message.channel.send(`Everyone new video:\n `+ messagexd);
+		 message.channel.send(`Everyone new video:\n `);
 
 	}
 });
