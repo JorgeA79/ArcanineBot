@@ -7,6 +7,7 @@ client.on('ready',() => {
 });
 
 var prefix = "a!"
+var lastvideoxd = "xd"
 var randomVideo = [
 "https://www.youtube.com/watch?v=hjwQZJKWLLs",
 "https://www.youtube.com/watch?v=mf7w6NXaZNw",
@@ -102,7 +103,7 @@ client.on('message', message => {
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
+  .setURL(lastvideoxd)
   
 
   message.channel.send({embed});
@@ -181,6 +182,7 @@ message.channel.createWebhook(name, avatar)
 client.on('message', message => {
 	if (message.author.bot){
 	if (message.content.startsWith('https://www.youtube')) {
+		lastvideoxd = (message.content)
 		var lastvideo = (message.content)
 	message.delete(1000);
 		 message.channel.send(`Everyone new video!` + lastvideo);
