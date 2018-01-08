@@ -136,8 +136,9 @@ client.on('message', message => {
 	}
 });
 client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'createhook')) {
+	 let args = message.content.split(" ").slice(1);
+  if (message.content.startsWith(prefix + "createHook")) {
+	  
 	 message.channel.createWebhook("Example Webhook", "https://i.imgur.com/p2qNFag.png")
       .then(webhook => webhook.edit("Example Webhook", "https://i.imgur.com/p2qNFag.png")
         .then(wb => message.author.send(`Here is your webhook https://canary.discordapp.com/api/webhooks/${wb.id}/${wb.token}`))
