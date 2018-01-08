@@ -179,7 +179,7 @@ message.channel.createWebhook(name, avatar)
 });
 client.on('message', message => {
 	if (message.author.bot) 
-	if (message.content.startsWith(' https://www.youtube.com')) {
+	if (message.content.startsWith(' https')) {
 		 var messagexd = (message.content)
 
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
