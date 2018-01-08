@@ -153,7 +153,15 @@ message.channel.createWebhook(name, avatar)
   .catch(error => console.log(error));
 	}
 });
+client.on('message', message => {
+	if (message.author.bot) return;
+	if (message.content.startsWith('https')) {
+	
+		 var messagexd = (message.content)
+		 message.channel.send(`Everyone new video:\n `+ messagexd);
 
+	}
+});
 //Important
 client.login(process.env.BOT_TOKEN);
 
