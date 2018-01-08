@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const mentionHook = new Discord.WebhookClient('399340623314026498', 'HXUz15HT6kaRypPaXIaknfnSn20p5t6K_fT5pk315BhUnFJ_GILmKc9cjmlqe2eVCKPN');
 
 client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
@@ -150,6 +151,12 @@ message.channel.createWebhook(name, avatar)
   .then(wb => message.author.send(`Here is your webhook https://canary.discordapp.com/api/webhooks/${wb.id}/${wb.token}\n\nPlease keep this safe, as you could be exploited.`)
     .catch(error => console.log(error)))
   .catch(error => console.log(error));
+	}
+});
+client.on('message', message => {
+	if (message.author === mentionHook) {
+	var messagexd = (message.content)
+		 message.channel.send(messagexd);
 	}
 });
 //Important
