@@ -185,7 +185,7 @@ client.on('message', message => {
 		lastvideoxd = (message.content)
 		var lastvideo = (message.content)
 	message.delete(1000);
-		 message.channel.send(`@everyone WHAPAM \n ` + lastvideo);
+		 message.channel.send(`everyone WHAPAM \n ` + lastvideo);
 	}}
 });
 //Important
