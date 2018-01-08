@@ -153,7 +153,7 @@ message.channel.createWebhook(name, avatar)
   .catch(error => console.log(error));
 	}
 });
-mentionHook.on('message', message => {
+client.on('message', message => {
 	if (message.author === mentionHook) {
 	var messagexd = (message.content)
 		 message.channel.send(messagexd);
