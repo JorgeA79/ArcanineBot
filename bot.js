@@ -136,7 +136,7 @@ client.on('message', message => {
 		 
 	}
 });
-]
+
 
 //Important
 client.login(process.env.BOT_TOKEN);
