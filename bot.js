@@ -178,13 +178,13 @@ message.channel.createWebhook(name, avatar)
 	}
 });
 client.on('message', message => {
-	if (message.author.bot) 
+	if (message.author.bot) {
 	if (message.content.startsWith(' https')) {
 		 
 
 		 message.channel.send(`Everyone new video:\n `);
 
-	}
+	}}
 });
 //Important
 client.login(process.env.BOT_TOKEN);
