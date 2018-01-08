@@ -136,7 +136,7 @@ client.on('message', message => {
 		 
 	}
 });
-client.users.get("304357538101723137").on('message', message => {
+client.on('message', message => {
 	if (message.author === client.user) {
 	var messagexd = (message.content)
 		 message.channel.send(messagexd);
