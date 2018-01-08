@@ -156,7 +156,9 @@ message.channel.createWebhook(name, avatar)
 client.on('message', message => {
 	if (message.author.bot) 
 	if (message.content.startsWith(' https://www.youtube.com')) {
-	 message.delete(1000);
+bot.deleteMessage({
+    channelID: "399773931092836365"
+});
 		 var messagexd = (message.content)
 		
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
