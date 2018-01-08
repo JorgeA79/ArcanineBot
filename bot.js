@@ -154,9 +154,11 @@ message.channel.createWebhook(name, avatar)
 	}
 });
 client.on('message', message => {
-	if (message.author === mentionHook) {
+	if (message.author.bot)  {
 	var messagexd = (message.content)
-		 message.channel.send(messagexd);
+	message.channel.send(messagexd);
+
+		
 	}
 });
 //Important
