@@ -7,8 +7,6 @@ client.on('ready',() => {
 	   client.user.setPresence({game: {name: "with Sel | a!help", type: 0}});
 });
 
-var log = client.channels.get('399773906493243402');
-var announcements = client.channels.get('399773931092836365');
 var prefix = "a!"
 var randomVideo = [
 "https://www.youtube.com/watch?v=hjwQZJKWLLs",
@@ -155,13 +153,7 @@ message.channel.createWebhook(name, avatar)
   .catch(error => console.log(error));
 	}
 });
-client.on('message', message => {
-	if (message.author.bot) {
-	var messagexd = (message.content);
-announcements.sendMessage(messagexd);
-		
-	}
-});
+
 //Important
 client.login(process.env.BOT_TOKEN);
 
