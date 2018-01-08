@@ -181,8 +181,9 @@ message.channel.createWebhook(name, avatar)
 client.on('message', message => {
 	if (message.author.bot){
 	if (message.content.startsWith('https')) {
+		var lastvideo = (message.content)
 	message.delete(1000);
-		 message.channel.send(message.author.toString() + `, need some help? :thinking: \n **-a!channel**\n **-a!randomvideo**\n **-a!server**\n **-a!ping**`);
+		 message.channel.send(lastvideo + `Everyone new video!`);
 	}}
 });
 //Important
