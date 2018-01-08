@@ -7,7 +7,7 @@ client.on('ready',() => {
 });
 
 var prefix = "a!"
-var lastvideoxd = "xd"
+var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
 var randomVideo = [
 "https://www.youtube.com/watch?v=hjwQZJKWLLs",
 "https://www.youtube.com/watch?v=mf7w6NXaZNw",
