@@ -5,7 +5,7 @@ client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
 	   client.user.setPresence({game: {name: "with Sel | a!help", type: 0}});
 });
-
+var lastvideo = "";
 var prefix = "a!"
 var randomVideo = [
 "https://www.youtube.com/watch?v=hjwQZJKWLLs",
@@ -102,7 +102,7 @@ client.on('message', message => {
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL(messagexd)
+  .setURL(lastvideo)
   
 
   message.channel.send({embed});
@@ -182,7 +182,7 @@ client.on('message', message => {
 	if (message.content.startsWith(' https://www.youtube.com')) {
  message.delete(1000);
 		 var messagexd = (message.content)
-		
+		lastvideo = (message.content)
 		 message.channel.send(`Everyone new video:\n `+ messagexd);
 
 	}
