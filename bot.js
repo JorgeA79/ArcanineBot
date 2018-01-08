@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const mentionHook = new Discord.WebhookClient('399672315157151744', 'Iae1u4sR7qtWXFptlhm8gba1PIBDLYxICaTyY2JMQgPaOT-2xvbpuL-T_4aZ6jOgpPg');
 
 client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
@@ -133,6 +134,15 @@ client.on('message', message => {
   message.channel.send({embed});
 		
 		 
+	}
+});
+]
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'test')) {
+	
+		    mentionHook.send("Webhook test success");
+
 	}
 });
 //Important
