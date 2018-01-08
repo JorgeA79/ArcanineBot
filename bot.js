@@ -139,7 +139,7 @@ client.on('message', message => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'test')) {
-	message.channel.send(mesage.content);
+	message.channel.send(message.content + ` xd`);
 	}
 });
 
