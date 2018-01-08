@@ -135,12 +135,7 @@ client.on('message', message => {
 		 
 	}
 });
-client.on('message', message => {
-	if (message.author === client.user) {
-	var messagexd = (message.content)
-		 message.channel.send(messagexd);
-	}
-});
+
 //Important
 client.login(process.env.BOT_TOKEN);
 
