@@ -61,10 +61,6 @@ client.on('message', message => {
   message.channel.send({embed});
 	}
 });
-bot.on('guildMemberAdd', member => {
-       member.guild.defaultChannel.send(`Welcome to the server, ${member}!`);
-       console.log(`${member.user.username} has joined`);
-});
 
 client.on('message', message => {
 	if (message.author === client.user) return;
