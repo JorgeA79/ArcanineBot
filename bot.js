@@ -26,11 +26,6 @@ var randomVideo = [
 "https://www.youtube.com/watch?v=rLEkkm1WQ3M"
 ]
 
-client.on("guildMemberAdd", (member) => {
-
-    const defaultChannel = client.channels.get("399340623314026498");
-    message.defaultChannel.send("Welcome our new users ${member}!");
-});
 
 client.on('message', message => {
 	if (message.author === client.user) return;
