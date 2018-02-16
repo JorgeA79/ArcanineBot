@@ -25,7 +25,7 @@ var randomVideo = [
 "https://www.youtube.com/watch?v=3Oqdkrx97Fs",
 "https://www.youtube.com/watch?v=rLEkkm1WQ3M"
 ]
-bot.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
     let mem = member.guild;
 
     if (mem.defaultChannel) {
