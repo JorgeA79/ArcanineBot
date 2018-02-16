@@ -33,7 +33,7 @@ client.on("guildMemberAdd", (member) => {
   if (newUsers.size > 1) {
     const defaultChannel = client.channels.get("399340623314026498");
     const userlist = newUsers.map(u => u.toString()).join(" ");
-    defaultChannel.send("Welcome our new users!\n" + userlist);
+    message.defaultChannel.send("Welcome our new users!\n" + userlist);
     newUsers.clear();
   }
 });
