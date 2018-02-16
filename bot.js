@@ -31,7 +31,7 @@ client.on("guildMemberAdd", (member) => {
   newUsers.set(member.id, member.user);
 
   if (newUsers.size > 1) {
-    const defaultChannel = guild.channels.find(c=> c.permissionsFor(guild.me).has("SEND_MESSAGES"));
+    const defaultChannel = client.channels.get("399340623314026498");
     const userlist = newUsers.map(u => u.toString()).join(" ");
     defaultChannel.send("Welcome our new users!\n" + userlist);
     newUsers.clear();
