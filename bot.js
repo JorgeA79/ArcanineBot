@@ -25,11 +25,7 @@ var randomVideo = [
 "https://www.youtube.com/watch?v=3Oqdkrx97Fs",
 "https://www.youtube.com/watch?v=rLEkkm1WQ3M"
 ]
-client.on('guildMemberAdd', member => {
-	var welcomechannel = client.channels.get("399340623314026498");
-      message.welcomechannel.send(`Welcome to the server, ${member}!`);
-       console.log(`${member.user.username} has joined`);
-});
+
 
 
 client.on('message', message => {
