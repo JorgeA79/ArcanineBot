@@ -25,16 +25,12 @@ var randomVideo = [
 "https://www.youtube.com/watch?v=3Oqdkrx97Fs",
 "https://www.youtube.com/watch?v=rLEkkm1WQ3M"
 ]
-client.on("guildMemberAdd", member => {
-    let mem = member.guild;
-
-    if (mem.defaultChannel) {
-        mem.defaultChannel.sendMessage(member.user + " welcome to the server!"); 
-    } else {
-        // do something if the #general channel isn't available
-	    
-    }
+client.on('guildMemberAdd', member => {
+	var welcomechannel = client.channels.get("399340623314026498");
+      message.welcomechannel.send(`Welcome to the server, ${member}!`);
+       console.log(`${member.user.username} has joined`);
 });
+
 
 client.on('message', message => {
 	if (message.author === client.user) return;
