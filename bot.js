@@ -26,6 +26,9 @@ var randomVideo = [
 "https://www.youtube.com/watch?v=rLEkkm1WQ3M"
 ]
 
+client.on('guildMemberAdd', member => {
+    member.guild.channels.get('channelID').send('**' + member.user.username + '**, has joined the server!'); 
+});
 
 client.on('message', message => {
 	if (message.author === client.user) return;
