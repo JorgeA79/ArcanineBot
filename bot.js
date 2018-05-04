@@ -27,7 +27,7 @@ var randomVideo = [
 ]
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('399340623314026498').send('Hello! ' + (@member.user.id) + ', Welcome To RoaringArcanine I hope that you will enjoy your stay here and have fun! \nPlease make sure to read the rules'); 
+    member.guild.channels.get('399340623314026498').send('Hello! **' + member.user.username + '**, Welcome To RoaringArcanine I hope that you will enjoy your stay here and have fun! \nPlease make sure to read the rules'); 
 });
 
 client.on('message', message => {
