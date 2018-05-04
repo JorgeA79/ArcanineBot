@@ -5,7 +5,7 @@ client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
 	   client.user.setPresence({game: {name: "with Sel | a!help", type: 0}});
 });
-
+var welcomessage = "0"
 var prefix = "a!"
 var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
 var randomVideo = [
@@ -27,7 +27,7 @@ var randomVideo = [
 ]
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('399340623314026498').send('**' + member.user.username + '**, has joined the server!'); 
+    member.guild.channels.get('366830234726694913').send('**' + member.user.username + '**, has joined the server!'); 
 });
 
 client.on('message', message => {
