@@ -29,13 +29,7 @@ var randomVideo = [
 client.on('guildMemberAdd', member => {
     member.guild.channels.get('366830234726694913').send('Hello! **' + member.user.username + '**, Welcome To RoaringArcanine I hope that you will enjoy your stay here and have fun! \nPlease make sure to read the rules'); 
 });
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'think')) {
-	
-		 message.channel.send(`<:growthink:473577193591537666>`);
-	}
-});
+
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
