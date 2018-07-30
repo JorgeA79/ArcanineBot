@@ -33,7 +33,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'think')) {
 	
-		 message.channel.send(`:growthink:`);
+		 message.channel.send(`<:growthink:473577193591537666>`);
 	}
 });
 client.on('message', message => {
